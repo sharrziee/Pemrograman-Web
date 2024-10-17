@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e6cb81; /* Latar belakang */
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Warna latar kalkulator */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    width: 92%;
+    padding: 15px;
+    font-size: 28px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    text-align: right;
+    background-color: #989898; /* Latar belakang input */
+    color: white; /* Warna teks input */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Mengatur tombol secara vertikal */
+    gap: 10px; /* Jarak antar baris */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Membuat tombol tersebar merata */
+}
+
+.button {
+    padding: 20px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Membuat semua tombol memiliki lebar yang sama */
+    margin: 0 5px; /* Jarak antar tombol */
+}
+
+.number {
+    background-color: #4caf50; /* Warna tombol angka */
+    color: white;
+}
+
+.number:hover {
+    background-color: #45a049; /* Warna hover tombol angka */
+}
+
+.operator {
+    background-color: #2196f3; /* Warna tombol operator */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #1976d2; /* Warna hover tombol operator */
+}
+
+.equals {
+    background-color: #ff9800; /* Warna tombol '=' */
+    color: white;
+}
+
+.equals:hover {
+    background-color: #fb8c00; /* Warna hover tombol '=' */
+}
+
+.clear {
+    background-color: #f44336; /* Warna tombol clear */
+    color: white;
+}
+
+.clear:hover {
+    background-color: #e53935; /* Warna hover tombol clear */
+}
+
+.delete {
+    background-color: #ffeb3b; /* Warna tombol delete */
+    color: black;
+}
+
+.delete:hover {
+    background-color: #fdd835; /* Warna hover tombol delete */
+}

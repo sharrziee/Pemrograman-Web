@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8b500, #fceabb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 28px;
+    background: linear-gradient(90deg, #f76b1c, #e73827);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+}
+
+select {
+    background-color: #f4f4f4;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background: #e0f7fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #b2ebf2;
+}
+
+.priority-low { background-color: #a5d6a7; }
+.priority-medium { background-color: #ffcc80; }
+.priority-high { background-color: #ef9a9a; }
+
+button.delete, button.complete {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.complete {
+    background-color: #64b5f6;
+    color: white;
+    margin-right: 10px;
+}
+
+button.complete:hover {
+    background-color: #42a5f5;
+}
+
+button.delete {
+    background-color: #e57373;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #ef5350;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+    font-style: italic;
+}
